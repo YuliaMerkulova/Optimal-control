@@ -133,7 +133,7 @@ def compare_control(fk, fk1, T, tau, l, h):
                 sum += abs(fk[i][j][k])
                 sum_1 += abs(fk1[i][j][k])
                 znamen += 1
-    if sum_1/znamen < sum/znamen:
+    if sum_kv1 < sum_kv:
         return True
 
     return False
